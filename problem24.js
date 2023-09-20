@@ -1,3 +1,5 @@
+/*
+*/
 const findOutlier = arr => {
   // Your solution
 };

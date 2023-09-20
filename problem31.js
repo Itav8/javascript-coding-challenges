@@ -1,3 +1,5 @@
+/*
+*/
 const duplicateEncode = word => {
   // Your solution
 };

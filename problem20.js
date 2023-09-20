@@ -1,4 +1,5 @@
 /*
+Given a non-empty string of words, return the length of the shortest word(s).
 */
 const findShort = str => {
   // Your solution

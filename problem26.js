@@ -1,3 +1,5 @@
+/*
+*/
 String.prototype.capitalize = function () {
   // Your solution
 };

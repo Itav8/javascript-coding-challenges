@@ -1,3 +1,5 @@
+/*
+*/
 const duplicateCount = text => {
   // Your solution
 };
