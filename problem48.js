@@ -1,4 +1,7 @@
 /*
+Write a function that counts the frequency of all the characters in a given string.
+
+
 */
 const count = string => {
   // Your solution

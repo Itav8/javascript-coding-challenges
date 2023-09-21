@@ -1,4 +1,5 @@
 /*
+Write a function that subtracts one list from another and returns the result. It should remove all values from array a, which are present in array b.
 */
 const arrayDiff = (a, b) => {
   // Your solution

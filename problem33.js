@@ -1,4 +1,9 @@
-const persistence = num => {
+/*
+Write a function that takes a positive number num and returns its multiplicative persistence, which is the number of steps it takes to multiply all the digits of num by each other, and repeating with the product until a single digit is obtained.
+
+
+ */
+const persistence = (num) => {
   // Your solution
 };
 

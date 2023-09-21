@@ -1,4 +1,7 @@
 /*
+Write a function that takes an input string and returns the first character that is not repeated anywhere in the string. Upper- and lowercase letters are considered the same character, but the function should return the correct case for the initial letter.
+
+
 */
 const firstNonRepeatingLetter = str => {
   // Your solution

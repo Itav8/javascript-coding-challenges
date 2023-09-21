@@ -1,4 +1,7 @@
 /*
+Write a function that converts all the keys in an object from snake case to camel case.
+
+
 */
 const toCamel = obj => {
   // Your solution

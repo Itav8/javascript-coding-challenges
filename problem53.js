@@ -1,4 +1,17 @@
 /*
+Create a function that takes a positive integer less than 4,000 as its input and returns a string containing the Roman numeral representation of that integer. Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any digit with a value of zero. There can't be more than 3 identical symbols in a row. More about Roman numerals: http://en.wikipedia.org/wiki/Roman_numerals
+
+Table of individual decimal places for your reference:
+  Thousands	Hundreds	Tens	Units
+1	        M	       C	   X	    I
+2	       MM	      CC	  XX	   II
+3	      MMM	     CCC	 XXX	  III
+4		              CD    XL	   IV
+5		               D	   L	    V
+6		              DC	  LX	   VI
+7		             DCC	 LXX	  VII
+8		            DCCC	LXXX	 VIII
+9		              CM	  XC	   IX
 */
 const convertToRoman = number => {
   // Your solution

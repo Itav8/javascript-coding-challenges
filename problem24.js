@@ -1,4 +1,5 @@
 /*
+You are given an array of at least length 3 containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a function that takes the array as an argument and returns this "outlier" N.
 */
 const findOutlier = arr => {
   // Your solution

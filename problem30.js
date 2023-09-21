@@ -1,4 +1,7 @@
 /*
+Write a function that will return the count of distinct case-insensitive alphanumeric characters that occur more than once in the input string.
+
+
 */
 const duplicateCount = text => {
   // Your solution

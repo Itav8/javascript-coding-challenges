@@ -1,4 +1,5 @@
 /*
+Write a function that capitalizes each word in a given input string.
 */
 String.prototype.capitalize = function () {
   // Your solution

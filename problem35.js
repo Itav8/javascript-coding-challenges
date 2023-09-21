@@ -1,8 +1,13 @@
-const alphabetPosition = text => {
+/*
+Given a string, write a function that replaces every letter with its position in the alphabet: 'a' = 1, 'b' = 2, .... If anything in the input isn't a letter, ignore it and don't return it.
+
+
+ */
+const alphabetPosition = (text) => {
   // Your solution
 };
 
-console.log(alphabetPosition('The narwhal bacons at midnight.'));
+console.log(alphabetPosition("The narwhal bacons at midnight."));
 // '20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20'
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));

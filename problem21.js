@@ -5,6 +5,15 @@ For example the binary representation of 1234 is 10011010010, so the function sh
 */
 const countBits = n => {
   // Your solution
+  let count = 0
+
+  for (let i = n; i > 0; i=Math.floor(i/2)) {
+    const num = i % 2
+    if (num === 1) {
+      count++
+    }
+  }
+  return count
 };
 
 console.log(countBits(0)); // 0
