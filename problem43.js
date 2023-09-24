@@ -1,9 +1,7 @@
 /*
-Given an array candies where candies[i] represents the number of candies that the ith kid has, and an integer extraCandies, write a function that for each kid checks if he/she would have the greatest number of candies in the group if they were given extraCandies. Note that multiple kids can have the greatest number of candies. For example,
-
-
+Given an array candies where candies[i] represents the number of candies that the ith kid has, and an integer extraCandies, write a function that for each kid checks if he/she would have the greatest number of candies in the group if they were given extraCandies.
+Note that multiple kids can have the greatest number of candies. For example,
 */
-
 /*
 // Input: candies = [2,3,5,1,3], extraCandies = 3
 // Output: [true,true,true,false,true]
@@ -18,6 +16,13 @@ Explanation:
 
 const kidsWithCandies = (candies, extraCandies) => {
   // Your solution
+  const max = Math.max(...candies)
+  const booleans = []
+
+  for (let candy of candies) {
+    booleans.push(candy + extraCandies >= max)
+  }
+  return booleans
 };
 
 console.log(kidsWithCandies([12, 1, 12], 10)); // [true, false, true]

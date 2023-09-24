@@ -5,6 +5,19 @@ Write a function that takes a positive number num and returns its multiplicative
  */
 const persistence = (num) => {
   // Your solution
+  if (num < 10) {
+    return 0
+  }
+
+  let product = 1
+  while (num > 0) {
+    product *= num % 10
+    console.log("INSIDE WHILE", product, num);
+    num = Math.floor(num / 10)
+    console.log("INSIDE AFTER VAR", product, num);
+  }
+  console.log("OUTSIDE WHILE", product, num);
+  return 1 + persistence(product)
 };
 
 console.log(persistence(999)); // 4

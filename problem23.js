@@ -1,9 +1,16 @@
 /*
-Check to see if a string has the same amount of 'x's and 'o's.
-The method must return a boolean and be case insensitive. The input string can contain any character.
+Given an array of numbers, write a function that returns the sum of all of the positives ones.
+If the array is empty, the sum should be 0.
 */
 const positiveSum = arr => {
   // Your solution
+  let total = 0
+  for (const num of arr) {
+    if (num > 0) {
+      total += num
+    }
+  }
+  return total
 };
 
 console.log(positiveSum([1, 2, 3, 4, 5])); // 15

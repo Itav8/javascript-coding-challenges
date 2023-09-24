@@ -1,7 +1,8 @@
 /*
-You are given an m x n integer grid accounts, where accounts[i][j] is the amount of money the i​​​​​​​​​​​th​​​​ customer has in the j​​​​​​​​​​​th​​​​ bank. Return the wealth that the richest customer has. A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth. For example:
-
-
+You are given an m x n integer grid accounts, where accounts[i][j] is the amount of money the i​​​​​​​​​​​th​​​​ customer has in the j​​​​​​​​​​​th​​​​ bank.
+Return the wealth that the richest customer has. A customer's wealth is the amount of money they have in all their bank accounts.
+The richest customer is the customer that has the maximum wealth.
+For example:
 */
 /*
 Input: accounts = [[1,5],[7,3],[3,5]]
@@ -16,6 +17,18 @@ The 2nd customer is the richest with a wealth of 10.
 
 const maximumWealth = accounts => {
   // Your solution
+  let max = -Infinity
+  
+  for (let row = 0; row < accounts.length; row++) {
+    let sum = 0
+    for (let col = 0; col < accounts[row].length; col++) {
+      sum += accounts[row][col]
+    }
+    if (sum >= max) {
+      max = sum
+    }
+  }
+  return max
 };
 
 console.log(
