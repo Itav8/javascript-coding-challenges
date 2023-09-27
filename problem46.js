@@ -10,6 +10,20 @@ If the input or the result is an empty string it must return false.
 */
 const generateHashtag = str => {
   // Your solution
+  const splitStr = str.split(' ')
+  let converted = '#'
+
+  for (let i = 0; i < splitStr.length; i++) {
+    if (splitStr[i] !== '') {
+      converted += splitStr[i][0].toUpperCase() + splitStr[i].slice(1)
+    }
+  }
+
+  if (converted.length >= 140 || converted === '#') {
+    return false
+  } else {
+    return converted
+  }
 };
 
 console.log(generateHashtag('JavaScript')); // #JavaScript

@@ -5,6 +5,12 @@ Write a function that given an array of users, returns an array of their names. 
 */
 const getNames = users => {
   // Your solution
+  const names = []
+
+  for (const obj of users) {
+    names.push(obj.name)
+  }
+  return names
 };
 
 const users = [

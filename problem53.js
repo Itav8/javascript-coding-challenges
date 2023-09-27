@@ -1,5 +1,7 @@
 /*
-Create a function that takes a positive integer less than 4,000 as its input and returns a string containing the Roman numeral representation of that integer. Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any digit with a value of zero. There can't be more than 3 identical symbols in a row. More about Roman numerals: http://en.wikipedia.org/wiki/Roman_numerals
+Create a function that takes a positive integer less than 4,000 as its input and returns a string containing the Roman numeral representation of that integer.
+Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any digit with a value of zero.
+There can't be more than 3 identical symbols in a row. More about Roman numerals: http://en.wikipedia.org/wiki/Roman_numerals
 
 Table of individual decimal places for your reference:
   Thousands	Hundreds	Tens	Units
@@ -13,8 +15,37 @@ Table of individual decimal places for your reference:
 8		            DCCC	LXXX	 VIII
 9		              CM	  XC	   IX
 */
-const convertToRoman = number => {
+const convertToRoman = (number) => {
   // Your solution
+  const romanNumerals = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+
+  let result = "" //XXII
+
+  for (const symbol in romanNumerals) {
+    const value = romanNumerals[symbol];
+    console.log("BEFORE WHILE NUMBER", number, "VALUE", value);
+    while (number >= value) {
+      console.log("INSIDE WHILE NUMBER", number)
+      result += symbol;
+      number -= value;
+      console.log("INSIDE WHILE NUMBER", number, "RESULT", result);
+    }
+  }
+  return result
 };
 
 console.log(convertToRoman(4)); // IV
